@@ -1,0 +1,157 @@
+body{
+  font-family: "Comic Sans MS", "Comic Neue", "Comic Sans", "Times New Roman";
+}
+
+h1{
+  text-align: center;
+  animation-name: rotateColor, rotateBackgroundColor;
+  animation-duration: 4s, 4s;
+  animation-iteration-count: infinite, infinite;
+  animation-timing-function: linear, linear;
+  animation-delay: 0s, 2s;
+  
+  text-shadow: 1px 1px 3px #000;
+}
+
+h2{
+  font-family: "Times New Roman";
+}
+
+h3{
+  text-align: center;
+  animation: rotateColor 4s linear infinite;
+  
+  /*text-shadow: 1px 1px 3px #000;*/
+}
+
+.imgDescriptor{
+  width: 100%;
+  display: block;
+}
+
+.appTitle{
+  font-weight: bold;
+}
+
+.appDescription{
+  margin-bottom: auto;
+}
+
+/* gemene */
+.linkButton{
+  margin-top: auto;
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid transparent;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+
+/* Active/Clicked state */
+.linkButton:active {
+  background-color: gray;
+}
+
+.appContainer{
+  /*outline: 2px solid black;*/
+  width: 165px;
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #f8f8f8;
+  
+  padding: 5px;
+  
+  box-shadow: 3px 3px 10px gray;
+}
+
+#apps{
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  row-gap: 20px;
+}
+
+
+.btn-glossy {
+  background: linear-gradient(to bottom, #7da4ff 0%, #0047ff 50%, #46deff 100%);
+  color: white;
+  border: 1px solid #000;
+  border-radius: 15px;
+  padding: 6px 18px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  cursor: pointer;
+}
+
+.btn-glossy:hover {
+  background: linear-gradient(to bottom, #9ab9ff 0%, #3371ff 50%, #7ee5ff 100%);
+}
+
+.btn-geo {
+  background-color: #0000ff; /* Classic blue */
+  color: white;
+  border: 3px solid #000000;
+  padding: 8px 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #000000; /* Extra depth */
+}
+
+.btn-geo:hover {
+  background-color: #ffff00; /* Hover to yellow */
+  color: #000000;
+}
+
+.btn-geo:active {
+  box-shadow: 1px 1px 0px #000000;
+  transform: translate(3px, 3px); /* Pressed effect */
+}
+
+.btn-win95 {
+  background-color: #c0c0c0;
+  border-left: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  padding: 4px 12px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  /* Dotted focus ring used in older browsers */
+  outline: 1px dotted #000;
+  outline-offset: -3px;
+}
+
+.btn-win95:active {
+  border-left: 2px solid #808080;
+  border-top: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+@keyframes rotateColor {
+  0%   {color: red;    }
+  16%  {color: yellow; }
+  33%  {color: lime;   }
+  50%  {color: cyan;   }
+  66%  {color: blue;   }
+  83%  {color: magenta;}
+  100% {color: red;    }
+}
+
+@keyframes rotateBackgroundColor {
+  0%   {background-color: red;    }
+  16%  {background-color: yellow; }
+  33%  {background-color: lime;   }
+  50%  {background-color: cyan;   }
+  66%  {background-color: blue;   }
+  83%  {background-color: magenta;}
+  100% {background-color: red;    }
+}
