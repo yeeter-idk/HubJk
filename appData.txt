@@ -28,6 +28,11 @@ imgChickenSimulation.jpg<|>
 Chicken Simulation<|>
 Simulation of digital "chickens".<@>
 
+https://yeeter-idk.github.io/MerryChristmas2025/<|>
+imgMerryChristmas2025.jpg<|>
+Merry Christmas 2025<|>
+A yearly attempt at a fireworks simulator, this one kinda optimizes the drawing, even if it doesn't seem so, but it doesn't, take my word for it, source: me.<@>
+
 https://LaurenceMM.github.io/Bblade/<|>
 imgBblade.jpg<|>
 Beyblade<|>
